@@ -116,3 +116,16 @@
 .list .toggle {
   margin-top: -15px; /* Half height of toggle */
 }
+
+/*list-grid*/
+.list-grid{
+  clear: both;
+  overflow: hidden;
+}
+.list-grid li{
+  width: 33.333%;
+  float: left;
+  box-sizing: border-box;
+  border: none;
+  
+}

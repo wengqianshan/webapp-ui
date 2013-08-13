@@ -18,10 +18,39 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="toggle active">
-          <div class="toggle-handle"></div>
-        </div>
-        <h2>Lists</h2>
+<header class="bar-title">
+  <a class="button button-prev button-primary" href="#">
+    Left
+  </a>
+  <h1 class="title">Title</h1>
+  <a class="button button-next button-primary" href="#">
+    Right
+  </a>
+</header>
+<div class="content">
+<div class="home">
+    <ul class="list list-grid">
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">5</a>
+        </li>
+        <li>
+            <a href="#">6</a>
+        </li>
+    </ul>
+</div>
+<h2>Lists</h2>
 <ul class="list">
   <li>List item 1</li>
   <li>List item 2</li>
@@ -113,8 +142,75 @@
   <li>List item 3</li>
   <li>List item 4</li>
 </ul>
+<h2>Forms</h2>
+<form>
+  <input type="text" placeholder="Full name">
+  <input type="search" placeholder="Search">
+  <textarea rows="5"></textarea>
+  <a class="button button-block">Choose existing</a>
+</form>
 
-        
+<h2>Form with input group</h2>
+<form>
+  <div class="input-group">
+    <input type="text" placeholder="Full name">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Username">
+  </div>
+</form>
+
+<h2>Form with input group and labels</h2>
+<form>
+  <div class="input-group">
+    <div class="input-row">
+      <label>Full name</label>
+      <input type="text" placeholder="Mister Ratchet">
+    </div>
+    <div class="input-row">
+      <label>Email</label>
+      <input type="email" placeholder="ratchetframework@gmail.com">
+    </div>
+    <div class="input-row">
+      <label>Username</label>
+      <input type="text" placeholder="goRatchet">
+    </div>
+  </div>
+</form>
+</div>
+<nav class="bar-tab">
+  <ul class="tab-inner">
+    <li class="tab-item active">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-home.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-profile.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-messages.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-hamburger.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-settings.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+  </ul>
+</nav>
         
 
         <!--[if lt IE 7]>
