@@ -121,11 +121,36 @@
 .list-grid{
   clear: both;
   overflow: hidden;
+  >li{
+    float: left;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    &:first-child{
+      border-top: 1px solid #ddd;/*fix list style*/
+    }
+    a{
+      width: 100%;
+      min-height: 150px;
+      box-sizing: border-box;
+      margin: 0 !important;
+      text-align: center;
+      line-height: 150px;
+    }
+  }
 }
-.list-grid li{
-  width: 33.333%;
-  float: left;
-  box-sizing: border-box;
-  border: none;
-  
+.list-grid-3{
+  li{
+    width: 33.333%;
+  }
+  >:nth-child(1),
+  >:nth-child(2),
+  >:nth-child(3){
+    border-top: 1px solid #ddd;
+  }
+  >:nth-child(3n),
+  >:last-child{
+    border-right: 1px solid #ddd;
+  }
 }

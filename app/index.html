@@ -8,8 +8,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0;">
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
@@ -19,194 +26,217 @@
     </head>
     <body>
 <header class="bar-title">
-  <a class="button button-prev button-primary" href="#">
-    Left
+  <a class="button-prev" href="#">
+    返回
   </a>
-  <h1 class="title">Title</h1>
-  <a class="button button-next button-primary" href="#">
-    Right
+  <h1 class="title">应用中心</h1>
+  <a class="button" href="#">
+    添加
   </a>
 </header>
 <div class="content">
-<div class="home">
-    <ul class="list list-grid">
+    <div class="home">
+        <ul class="list list-grid list-grid-3">
+            <li>
+                <a href="#"><i class="icon-microphone"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-youtube-sign"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-google-plus"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-dribbble"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-skype"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-windows"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-weibo"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="slider" id="mySlider">
+      <ul>
         <li>
-            <a href="#">1</a>
+          <img src="images/slide/1.jpg">
+          <span class="slide-text">← Slide me</span>
         </li>
         <li>
-            <a href="#">2</a>
+          <img src="images/slide/2.jpg">
         </li>
         <li>
-            <a href="#">3</a>
+          <img src="images/slide/3.jpg">
         </li>
-        <li>
-            <a href="#">4</a>
-        </li>
-        <li>
-            <a href="#">5</a>
-        </li>
-        <li>
-            <a href="#">6</a>
-        </li>
+      </ul>
+    </div>
+    <h2>Lists</h2>
+    <ul class="list">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li class="list-divider">List Divider</li>
+      <li>List item 3</li>
     </ul>
-</div>
-<h2>Lists</h2>
-<ul class="list">
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li class="list-divider">List Divider</li>
-  <li>List item 3</li>
-</ul>
-<ul class="list">
-  <li>
-    <a href="#">
-      List item 1
-      <span class="chevron"></span>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      List item 2
-      <span class="chevron"></span>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      List item 3
-      <span class="chevron"></span>
-    </a>
-  </li>
-</ul>
-<h2>List with counts and chevrons</h2>
-<ul class="list">
-  <li>
-    <a href="#">
-      List item 1
-      <span class="chevron"></span>
-      <span class="count">4</span>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      List item 2
-      <span class="chevron"></span>
-      <span class="count">1</span>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      List item 3
-      <span class="chevron"></span>
-      <span class="count">5</span>
-    </a>
-  </li>
-</ul>
-<h2>List with buttons</h2>
-<ul class="list">
-  <li>List item 1 <a href="#" class="button button-rounded">Button</a></li>
-  <li>List item 2 <a class="button button-primary">Button</a></li>
-  <li>List item 3 <a class="button">Button</a></li>
-  <li>List item 4 <a class="button">Button</a></li>
-</ul>
+    <ul class="list">
+      <li>
+        <a href="#">
+          List item 1
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          List item 2
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          List item 3
+          <span class="chevron"></span>
+        </a>
+      </li>
+    </ul>
+    <h2>List with counts and chevrons</h2>
+    <ul class="list">
+      <li>
+        <a href="#">
+          List item 1
+          <span class="chevron"></span>
+          <span class="count">4</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          List item 2
+          <span class="chevron"></span>
+          <span class="count">1</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          List item 3
+          <span class="chevron"></span>
+          <span class="count">5</span>
+        </a>
+      </li>
+    </ul>
+    <h2>List with buttons</h2>
+    <ul class="list">
+      <li><i class="icon-microphone"></i> List item 1 <a href="#" class="button">修改</a></li>
+      <li><i class="icon-thumbs-up-alt"></i> List item 2 <a class="button-negative">删除</a></li>
+      <li><i class="icon-pencil"></i> List item 3 <a class="button">查看详情</a></li>
+      <li><i class="icon-fullscreen"></i> List item 4 <a class="button">开启</a></li>
+    </ul>
 
-<h2>List with toggles</h2>
-<ul class="list">
-  <li>
-    List item 1
-    <div class="toggle">
-      <div class="toggle-handle"></div>
-    </div>
-  </li>
-  <li>
-    List item 2
-    <div class="toggle active">
-      <div class="toggle-handle"></div>
-    </div>
-  </li>
-  <li>
-    List item 3
-    <div class="toggle">
-      <div class="toggle-handle"></div>
-    </div>
-  </li>
-</ul>
+    <h2>List with toggles</h2>
+    <ul class="list">
+      <li>
+        List item 1
+        <div class="toggle">
+          <div class="toggle-handle"></div>
+        </div>
+      </li>
+      <li>
+        List item 2
+        <div class="toggle active">
+          <div class="toggle-handle"></div>
+        </div>
+      </li>
+      <li>
+        List item 3
+        <div class="toggle">
+          <div class="toggle-handle"></div>
+        </div>
+      </li>
+    </ul>
 
-<h2>Inset list</h2>
-<ul class="list inset">
-  <li>
-    <h3>demo</h3>
-    <p>List item 1</p>
-  </li>
-  <li>List item 2</li>
-  <li class="list-divider">List Divider</li>
-  <li>List item 3</li>
-  <li>List item 4</li>
-</ul>
-<h2>Forms</h2>
-<form>
-  <input type="text" placeholder="Full name">
-  <input type="search" placeholder="Search">
-  <textarea rows="5"></textarea>
-  <a class="button button-block">Choose existing</a>
-</form>
+    <h2>Inset list</h2>
+    <ul class="list inset">
+      <li>
+        <h3>demo</h3>
+        <p>List item 1</p>
+      </li>
+      <li>List item 2</li>
+      <li class="list-divider">List Divider</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <h2>Forms</h2>
+    <form>
+      <input type="text" placeholder="Full name">
+      <input type="search" placeholder="Search">
+      <textarea rows="5"></textarea>
+      <a class="button button-block">Choose existing</a>
+    </form>
 
-<h2>Form with input group</h2>
-<form>
-  <div class="input-group">
-    <input type="text" placeholder="Full name">
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="Username">
-  </div>
-</form>
+    <h2>Form with input group</h2>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="Full name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Username">
+      </div>
+    </form>
 
-<h2>Form with input group and labels</h2>
-<form>
-  <div class="input-group">
-    <div class="input-row">
-      <label>Full name</label>
-      <input type="text" placeholder="Mister Ratchet">
-    </div>
-    <div class="input-row">
-      <label>Email</label>
-      <input type="email" placeholder="ratchetframework@gmail.com">
-    </div>
-    <div class="input-row">
-      <label>Username</label>
-      <input type="text" placeholder="goRatchet">
-    </div>
-  </div>
-</form>
+    <h2>Form with input group and labels</h2>
+    <form>
+      <div class="input-group">
+        <div class="input-row">
+          <label>Full name</label>
+          <input type="text" placeholder="Mister Ratchet">
+        </div>
+        <div class="input-row">
+          <label>Email</label>
+          <input type="email" placeholder="ratchetframework@gmail.com">
+        </div>
+        <div class="input-row">
+          <label>Username</label>
+          <input type="text" placeholder="goRatchet">
+        </div>
+      </div>
+    </form>
 </div>
 <nav class="bar-tab">
   <ul class="tab-inner">
+    <li class="tab-item">
+      <a href="#">
+        <p><i class="icon-microphone"></i></p>
+        <div class="tab-label">语音</div>
+      </a>
+    </li>
     <li class="tab-item active">
       <a href="#">
-        <img class="tab-icon" src="img/icon-home.png">
-        <div class="tab-label">Label</div>
+        <p><i class="icon-windows"></i></p>
+        <div class="tab-label">应用</div>
       </a>
     </li>
     <li class="tab-item">
       <a href="#">
-        <img class="tab-icon" src="img/icon-profile.png">
-        <div class="tab-label">Label</div>
+        <p><i class="icon-home"></i></p>
+        <div class="tab-label">首页</div>
       </a>
     </li>
     <li class="tab-item">
       <a href="#">
-        <img class="tab-icon" src="img/icon-messages.png">
-        <div class="tab-label">Label</div>
+        <p><i class="icon-star"></i></p>
+        <div class="tab-label">收藏</div>
       </a>
     </li>
     <li class="tab-item">
       <a href="#">
-        <img class="tab-icon" src="img/icon-hamburger.png">
-        <div class="tab-label">Label</div>
-      </a>
-    </li>
-    <li class="tab-item">
-      <a href="#">
-        <img class="tab-icon" src="img/icon-settings.png">
-        <div class="tab-label">Label</div>
+        <p><i class="icon-th"></i></p>
+        <div class="tab-label">更多</div>
       </a>
     </li>
   </ul>

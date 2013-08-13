@@ -1,7 +1,9 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+$FontAwesomePath: "../styles/fonts";
 
 //@import 'sass-bootstrap/lib/bootstrap';
+@import 'font-awesome/scss/font-awesome';
 @import 'bar/bar';
 @import 'base/base';
 @import 'button/button';
@@ -14,3 +16,39 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import 'slider/slider';
 @import 'toggle/toggle';
 
+.home{
+  font-size: 48px;
+  a{
+    &:hover{
+      color: #f60;
+      i{
+        color: #f60;
+      }
+    }
+  }
+}
+.bar-tab{
+  a{
+    color: #eee;
+  }
+  li.active a{
+    color: #f90;
+  }
+}
+.slider {
+  position: relative;
+}
+.slider .slide-text {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.slider, .slider li, .slider li img {
+width: 100%;
+}
