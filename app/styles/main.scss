@@ -17,9 +17,16 @@ $FontAwesomePath: "../styles/fonts";
 @import 'toggle/toggle';
 
 .home{
-  font-size: 48px;
   a{
-    &:hover{
+    i{
+      font-size: 48px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    span{
+        color: #999;
+    }
+    &:active{
       color: #f60;
       i{
         color: #f60;
@@ -35,6 +42,7 @@ $FontAwesomePath: "../styles/fonts";
     color: #f90;
   }
 }
+/*slider*/
 .slider {
   position: relative;
 }

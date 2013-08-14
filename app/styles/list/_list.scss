@@ -121,28 +121,27 @@
 .list-grid{
   clear: both;
   overflow: hidden;
+  list-style: none;
   >li{
     float: left;
     box-sizing: border-box;
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 0;
-    &:first-child{
-      border-top: 1px solid #ddd;/*fix list style*/
-    }
     a{
+      display: block;
       width: 100%;
       min-height: 150px;
       box-sizing: border-box;
       margin: 0 !important;
       text-align: center;
-      line-height: 150px;
+      padding-top: 40px;
     }
   }
 }
 .list-grid-3{
   li{
-    width: 33.333%;
+    width: 33.333333333333%;
   }
   >:nth-child(1),
   >:nth-child(2),
