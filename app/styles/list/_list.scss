@@ -132,7 +132,6 @@
       display: block;
       width: 100%;
       min-height: 150px;
-      box-sizing: border-box;
       margin: 0 !important;
       text-align: center;
       padding-top: 40px;
@@ -151,5 +150,15 @@
   >:nth-child(3n),
   >:last-child{
     border-right: 1px solid #ddd;
+  }
+}
+@media only screen and (width: 320px) {
+  .list-grid-3{
+    li{
+      width: 106px;
+    }
+    >:nth-child(3n){
+      width: 108px;
+    }
   }
 }

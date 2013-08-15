@@ -1,0 +1,9 @@
+{
+  "name": "webapp-ui",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "width": 320,
+    "height": 480
+  }
+}
